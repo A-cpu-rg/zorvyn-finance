@@ -3,6 +3,10 @@ from datetime import datetime, timezone
 
 from sqlalchemy import Boolean, DateTime, Enum, Integer, String
 from sqlalchemy.orm import Mapped, mapped_column, relationship
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from app.models.transaction import Transaction
 
 from app.database import Base
 
